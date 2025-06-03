@@ -40,8 +40,8 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-indigo-600 bg-clip-text text-transparent">
-                Цветы для души
+              <span className="bg-gradient-to-r from-cocktail-purple via-cocktail-rose to-cocktail-mauve bg-clip-text text-transparent">
+                Цветочный коктейль
               </span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
@@ -51,15 +51,18 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 size="lg"
-                className="bg-purple-500 hover:bg-purple-600 px-8"
+                className="bg-cocktail-purple hover:bg-cocktail-purple/90 px-8"
+                asChild
               >
-                <Icon name="Flower" size={20} className="mr-2" />
-                Выбрать букет
+                <Link to="/bouquets">
+                  <Icon name="Flower" size={20} className="mr-2" />
+                  Выбрать букет
+                </Link>
               </Button>
               <Button
                 size="lg"
                 variant="outline"
-                className="border-purple-200 hover:bg-purple-50"
+                className="border-cocktail-purple/30 hover:bg-cocktail-lavender text-cocktail-purple"
               >
                 <Icon name="Phone" size={20} className="mr-2" />
                 Заказать звонок
@@ -74,8 +77,8 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-green-100 to-green-200 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Icon name="Truck" size={32} className="text-green-600" />
+              <div className="w-16 h-16 bg-gradient-to-br from-cocktail-green/20 to-cocktail-green/30 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Icon name="Truck" size={32} className="text-cocktail-green" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Быстрая доставка</h3>
               <p className="text-gray-600">
@@ -83,8 +86,12 @@ const Index = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-purple-100 to-purple-200 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Icon name="Flower2" size={32} className="text-purple-600" />
+              <div className="w-16 h-16 bg-gradient-to-br from-cocktail-purple/20 to-cocktail-mauve/30 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Icon
+                  name="Flower2"
+                  size={32}
+                  className="text-cocktail-purple"
+                />
               </div>
               <h3 className="text-xl font-semibold mb-2">Свежие цветы</h3>
               <p className="text-gray-600">
@@ -92,8 +99,8 @@ const Index = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-pink-100 to-pink-200 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Icon name="Heart" size={32} className="text-pink-600" />
+              <div className="w-16 h-16 bg-gradient-to-br from-cocktail-pink/30 to-cocktail-rose/30 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Icon name="Heart" size={32} className="text-cocktail-rose" />
               </div>
               <h3 className="text-xl font-semibold mb-2">С любовью</h3>
               <p className="text-gray-600">
@@ -123,7 +130,7 @@ const Index = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-purple-200 hover:bg-purple-50"
+                className="border-cocktail-purple/30 hover:bg-cocktail-lavender text-cocktail-purple"
               >
                 Смотреть все букеты
                 <Icon name="ArrowRight" size={20} className="ml-2" />
@@ -134,7 +141,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-purple-500 to-pink-500">
+      <section className="py-16 bg-gradient-to-r from-cocktail-purple to-cocktail-mauve">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-white mb-4">
             Не знаете, что выбрать?
@@ -144,7 +151,7 @@ const Index = () => {
           </p>
           <Button
             size="lg"
-            className="bg-white text-purple-600 hover:bg-gray-100"
+            className="bg-white text-cocktail-purple hover:bg-cocktail-white/90"
           >
             <Icon name="MessageCircle" size={20} className="mr-2" />
             Получить консультацию
